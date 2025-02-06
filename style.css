@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "cockfont";
+    src: url("./cockfont.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/fond-geometrique-bleu-rouge_23-2147668463.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    display: flex;
+    color: white;
+    font-size: 5em;
+    justify-content: center;
+    
+}
+
+h1::first-letter {
+    font-family:'cockfont', sans-serif;
+}
+
+
+
+h3 {
+    color: white;
+    font-size: 2em;
+}
+
+header > h3 {
+    display: flex;
+    justify-content: flex-end;
+}
