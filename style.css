@@ -10,28 +10,26 @@ body {
     flex-direction: column;
     background-image: url(images/fond-geometrique-bleu-rouge_23-2147668463.avif);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 section:first-of-type {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 500px;
 }
 
 h1 {
     display: flex;
     color: white;
-    font-size: 5em;
+    font-size: 4em;
     justify-content: center;
-    
 }
 
 h1::first-letter {
     font-family:'cockfont', sans-serif;
 }
-
-
 
 h3 {
     color: white;
@@ -41,4 +39,24 @@ h3 {
 header > h3 {
     display: flex;
     justify-content: flex-end;
+}
+
+/*fond de la présentation*/
+
+section:nth-of-type(2) {
+    background-color: blue;
+    border-radius: 30px;
+    width: fit-content;
+    height: 100px;
+    padding: 15px;
+}
+
+ul:first-of-type{
+    display: flex;
+}
+
+ul:nth-of-type(2), ul:nth-of-type(3), ul:nth-of-type(4), ul:nth-of-type(5) {
+    display: block;
+    border-style: dashed;
+    border-width: 2px;
 }
