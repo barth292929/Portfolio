@@ -1,62 +1,84 @@
-@font-face {
-    font-family: "cockfont";
-    src: url("./cockfont.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
+body {
+    background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+  
+  
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* pour pousser le contenu vers la droite */
+    align-items: center;
 }
 
-body {
+header > img {
+    width: 120px;
+    height: 150px;
+}
+
+body > section {
     display: flex;
     flex-direction: column;
-    background-image: url(images/fond-geometrique-bleu-rouge_23-2147668463.avif);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
-section:first-of-type {
+body > section > h2 {
+    margin-top: 50px;
+}  
+
+body > article {
     display: flex;
     justify-content: center;
-    align-content: center;
-    height: 500px;
+    margin-top: 150px;
 }
 
-h1 {
-    display: flex;
-    color: white;
-    font-size: 4em;
-    justify-content: center;
-}
-
-h1::first-letter {
-    font-family:'cockfont', sans-serif;
-}
-
-h3 {
-    color: white;
-    font-size: 2em;
-}
-
-header > h3 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-/*fond de la présentation*/
-
-section:nth-of-type(2) {
-    background-color: blue;
+body > article > div {
+    background: linear-gradient(to right, aliceblue, yellow);    
+    width: 600px ;
+    height: 200px;
+    margin: 20px;
     border-radius: 30px;
-    width: fit-content;
-    height: 100px;
-    padding: 15px;
-}
-
-ul:first-of-type{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    transition : all, ease, 1.5s ;
 }
 
-ul:nth-of-type(2), ul:nth-of-type(3), ul:nth-of-type(4), ul:nth-of-type(5) {
-    display: block;
-    border-style: dashed;
-    border-width: 2px;
+body > article > div:hover {
+    transform: scale(1.2);
+}
+
+body > article > div > p {
+    font-size: 30px;
+    padding: 70px 200px;
+    border-radius: 5px;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-size: 50px ; 
+    font-weight: 400px;
+}
+
+footer {
+    background-color: red;
+}
+
+footer > div > ul {
+    list-style-type: none;
+}
+
+article:nth-of-type(2) {
+    margin-top: 200px;
 }
