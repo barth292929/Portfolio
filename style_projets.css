@@ -31,24 +31,154 @@ section {
 }
 
 section > div {
-    background-color: red;
-    margin-top: 20px;
-    width: 500px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    transition: all 0.5s ease;
-    cursor: pointer;
+    margin-top: 15px;
 }
 
-.zoomed {
+.zoomable1 {
+    width: 200px;
+    height: 100px;
+    background-color: #4ade80;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  /* On cache les éléments détaillés de base */
+  .zoomable1 .details {
+    display: none;
+}
+  
+  /* Quand zoomé, on affiche le reste */
+  .zoomable1.zoomed .details {
+    display: block;
+}
+  
+  /* Style en mode zoomé plein écran */
+  .zoomable1.zoomed {
     position: fixed;
     top: 5%;
     left: 5%;
     width: 90vw;
     height: 90vh;
     z-index: 999;
-    background-color: #4ade80;
     border-radius: 24px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background-color: #4ade80;
 }
+
+
+  .zoomable2 {
+    width: 200px;
+    height: 100px;
+    background-color: #4ade80;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  /* On cache les éléments détaillés de base */
+  .zoomable2 .details {
+    display: none;
+}
+  
+  /* Quand zoomé, on affiche le reste */
+  .zoomable2.zoomed .details {
+    display: block;
+}
+  
+  /* Style en mode zoomé plein écran */
+  .zoomable2.zoomed {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90vw;
+    height: 90vh;
+    z-index: 999;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background-color: #4ade80;
+}
+
+.zoomable3 {
+    width: 200px;
+    height: 100px;
+    background-color: #4ade80;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* On cache les éléments détaillés de base */
+  .zoomable3 .details {
+    display: none;
+  }
+  
+  /* Quand zoomé, on affiche le reste */
+  .zoomable3.zoomed .details {
+    display: block;
+  }
+  
+  /* Style en mode zoomé plein écran */
+  .zoomable3.zoomed {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90vw;
+    height: 90vh;
+    z-index: 999;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background-color: #4ade80;
+  }
+
+  .zoomable4 {
+    width: 200px;
+    height: 100px;
+    background-color: #4ade80;
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* On cache les éléments détaillés de base */
+  .zoomable4 .details {
+    display: none;
+  }
+  
+  /* Quand zoomé, on affiche le reste */
+  .zoomable4.zoomed .details {
+    display: block;
+  }
+  
+  /* Style en mode zoomé plein écran */
+  .zoomable4.zoomed {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90vw;
+    height: 90vh;
+    z-index: 999;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    background-color: #4ade80;
+  }
