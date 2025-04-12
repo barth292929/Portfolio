@@ -1,0 +1,54 @@
+header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+header > ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header > ul > li {
+    margin: 5px;
+    font-size: 25px;
+    background-color: red;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > div {
+    background-color: red;
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.zoomed {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90vw;
+    height: 90vh;
+    z-index: 999;
+    background-color: #4ade80;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
