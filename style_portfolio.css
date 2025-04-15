@@ -9,9 +9,6 @@ body {
     100% {background-position: 0% 50%;}
   }
 
-p {
-
-}
 
 
 header {
@@ -96,4 +93,11 @@ article:nth-of-type(2) {
 
 footer > div > p {
     font-size: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 70px 200px;
 }
