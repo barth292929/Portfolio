@@ -35,10 +35,6 @@ header > ul > li > a {
     color: white;
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
-}
 
 section {
     display: flex;
@@ -197,6 +193,40 @@ section > div {
     border-radius: 24px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
     background-color: #00bbff;
+}
+
+.zoomable5 {
+  width: 200px;
+  height: 100px;
+  background-color: #4ade80;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoomable5 .details {
+  display: none;
+}
+
+.zoomable5.zoomed .details {
+  display: block;
+}
+
+.zoomable5.zoomed {
+  position: fixed;
+  top: 8%;
+  left: 5%;
+  width: 90vw;
+  height: 85vh;
+  z-index: 999;
+  border-radius: 24px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  background-color: #00bbff;
 }
 
 video {
