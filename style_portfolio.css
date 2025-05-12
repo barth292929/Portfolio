@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* pour pousser le contenu vers la droite */
+    align-items: center;
+}
+
+header > img {
+    width: 120px;
+    height: 150px;
+}
+
+body > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+body > section > h2 {
+    margin-top: 50px;
+}  
+
+body > article {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+body > article > div {
+    background: linear-gradient(to right, aliceblue, yellow);    
+    width: 600px ;
+    height: 200px;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition : all, ease, 1.5s ;
+}
+
+body > article > div:hover {
+    transform: scale(1.2);
+}
+
+body > article > div > p {
+    font-size: 30px;
+    padding: 70px 200px;
+    border-radius: 5px;
+    font-variant: small-caps;
+}
+
+h2 {
+    font-size: 50px ; 
+    font-weight: 400px;
+}
+
+section > img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/*footer {
+    background-color: red;
+    border-radius: 15px;
+    padding: 10px;
+}*/
+
+footer > div > ul {
+    list-style-type: none;
+}
+
+article:nth-of-type(2) {
+    margin-top: 200px;
+}
+
+footer > div > p {
+    font-size: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 70px 200px;
+}

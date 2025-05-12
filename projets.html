@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_projets.css">
+</head>
+
+<script>
+    function toggleZoom(element) {
+      element.classList.toggle('zoomed');
+    }
+</script>
+
+<html>
+    <header>
+        <ul>
+            <li><a href="portfoli.html">Accueil</a></li>
+        </ul>
+    </header>
+
+    <body>
+        <h2>Mes projets</h2><hr>
+
+        <div>
+            <h2>Projets algorithmiques</h2>
+            <div class="zoomable1" onclick="toggleZoom(this)">
+                <h2>Jeu du snake</h2> <br> <br>
+                <h4>Le but du jeu est de manger 10 pommes apparaissant une par une aléatoirement dans un plateau de jeu qui ont pour effet de le rendre plus rapide et plus grand</h4>
+                <h4>Les difficultés résident dans le fait que le serpent ne doit pas rentrer en collision avec lui même, les bordures du plateau, ou un des 4 obstacles présents dans le plateau</h4>
+                <h4>Spécifications : <br> <ul>
+                    <li>language : C</li>
+                    <li>Réalisé en autonomie</li>
+                </ul></h4>
+                <video controls preload="auto">
+                    <source src="images/video_snake.mov" type="video/mp4">
+            </div>
+
+            <div class="zoomable4" onclick="toggleZoom(this)">
+                <h2>Exploration algorithmique d'un problème</h2>
+            </div>
+        </div>
+
+        <div>
+            <h2>Projets Web</h2>
+            <div class="zoomable2" onclick="toggleZoom(this)">
+                <h2>Site des JO 2024</h2>
+            </div>
+
+            <div class="zoomable2" onclick="toggleZoom(this)">
+                <h2>Site internet en React</h2>
+            </div>
+        </div>
+
+        <div>
+            <h2>Projets en BDD</h2>
+            <div class="zoomable3" onclick="toggleZoom(this)">
+                <h2>Création d'une Base de données en Tuto D</h2>
+            </div>
+        </div>
+
+        <section>
+            <div class="zoomable5" onclick="toggleZoom(this)" >
+                <h2>mabite</h2>
+            </div>
+        </section>
+    </body>
+</html>
