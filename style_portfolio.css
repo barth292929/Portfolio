@@ -1,32 +1,27 @@
 body {
-    background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #1f1f1f, #282e30, #090e0d);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-  }
-  @keyframes gradient {
+}
+
+/* @keyframes gradient {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
-  }
+} */
 
 header {
-    width: 100%;
     display: flex;
-    justify-content: flex-end; /* pour pousser le contenu vers la droite */
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.moi {
+    margin: 10px;
+    border: 3px solid red;
 }
 
 header > img {
-    width: 120px;
-    height: 150px;
-}
-
-body > section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    width: 180px;
 }
 
 body > section > h2 {
@@ -40,7 +35,7 @@ body > article {
     gap: 250px;
 }
 
-.container:hover {
+.container1:hover {
     transform: scale(1.2);
 }
 
@@ -58,7 +53,6 @@ h2 {
 section > img {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -91,6 +85,20 @@ a {
     font-size: 30px;
 }
 
+.container1 {
+    background: linear-gradient(to right, aliceblue, yellow);    
+    width: 500px ;
+    height: 200px;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition : all, ease, 1.5s ;
+    text-align: center;
+    margin-top: 1000px;
+}
+
 .container {
     background: linear-gradient(to right, aliceblue, yellow);    
     width: 500px ;
@@ -104,6 +112,11 @@ a {
     text-align: center;
 }
 
+/****************************************************************************
+CACHER LES IMAGES
+*****************************************************************************
+*/
+
 .image {
     position: absolute;
     opacity: 0;
@@ -113,86 +126,96 @@ a {
 .image1 {
     top: 50%;
     left: 50%;
-    width: 110px;
-    transform: translate(-50%, -50%);
+    width: 70px;
+    transform: translate(-30%, -30%);
 }
 
 .image2 {
     top: 50%;
     left: 50%;
-    width: 110px;
-    transform: translate(-50%, -50%);
+    width: 70px;
+    transform: translate(-30%, -30%);
 }
 
 .image3 {
     top: 50%;
     left: 50%;
-    width: 110px;
+    width: 70px;
     transform: translate(-50%, -50%);
 }
 
 .image4 {
     top: 50%;
     left: 50%;
-    width: 110px;
+    width: 70px;
     transform: translate(-50%, -50%);
 }
 
 .image5 {
     top: 50%;
     left: 50%;
-    width: 110px;
+    width: 70px;
     transform: translate(-50%, -50%);
 }
 
 .image6 {
     top: 50%;
     left: 50%;
-    width: 110px;
+    width: 70px;
     transform: translate(-50%, -50%);
 }
 
 .image7 {
     top: 50%;
     left: 50%;
-    width: 110px;
-    transform: translate(-50%, -50%);
+    width: 70px;
+    transform: translate(-30%, -30%);
 }
 
-.container:hover .image1 {
+/****************************************************************************
+DÉPLACEMENT DES IMAGES
+*****************************************************************************
+*/
+
+.container1:hover .image1 {
     transform: translate(-10%, -150%);
     opacity: 1;
 }
 
-.container:hover .image2 {
-    transform: translate(150%, -150%);
+.container1:hover .image2 {
+    transform: translate(170%, -130%);
     opacity: 1;
 }
 
-.container:hover .image3 {
-    transform: translate(50%, 150%);
+.container1:hover .image3 {
+    transform: translate(37%, 110%);
     opacity: 1;
 }
 
-.container:hover .image4 {
-    transform: translate(-50%, -150%);
+.container1:hover .image4 {
+    transform: translate(-250%, -10%);
     opacity: 1;
 }
 
-.container:hover .image5 {
+.container1:hover .image5 {
     transform: translate(-150%, -150%);
     opacity: 1;
 }
 
-.container:hover .image6 {
-    transform: translate(210%, 100%);
+.container1:hover .image6 {
+    transform: translate(210%, 70%);
     opacity: 1;
 }
 
-.container:hover .image7 {
+.container1:hover .image7 {
     transform: translate(-200%, 150%);
     opacity: 1;
 }
+
+/****************************************************************************
+PARTIE DÉBILE
+*****************************************************************************
+*/
 
 .wheel-container {
     position: relative;
