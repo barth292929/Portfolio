@@ -9,8 +9,6 @@ body {
     100% {background-position: 0% 50%;}
   }
 
-
-
 header {
     width: 100%;
     display: flex;
@@ -39,30 +37,18 @@ body > article {
     display: flex;
     justify-content: center;
     margin-top: 150px;
+    gap: 250px;
 }
 
-body > article > div {
-    background: linear-gradient(to right, aliceblue, yellow);    
-    width: 600px ;
-    height: 200px;
-    margin: 20px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition : all, ease, 1.5s ;
-}
-
-body > article > div:hover {
+.container:hover {
     transform: scale(1.2);
 }
 
 body > article > div > p {
     font-size: 30px;
-    padding: 70px 200px;
     border-radius: 5px;
     font-variant: small-caps;
-}
+} 
 
 h2 {
     font-size: 50px ; 
@@ -70,12 +56,16 @@ h2 {
 }
 
 section > img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
 }
 
+/*********************************************************************************
+HAUT DE PAGE
+*********************************************************************************
+*/
 
 /*footer {
     background-color: red;
@@ -99,5 +89,207 @@ a {
     color: black;
     text-decoration: none;
     font-size: 30px;
-    padding: 70px 200px;
+}
+
+.container {
+    background: linear-gradient(to right, aliceblue, yellow);    
+    width: 500px ;
+    height: 200px;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition : all, ease, 1.5s ;
+    text-align: center;
+}
+
+.image {
+    position: absolute;
+    opacity: 0;
+    transition: transform 1s ease, opacity 0.6s ease;
+}
+
+.image1 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.image2 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.image3 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.image4 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.image5 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.image6 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.image7 {
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover .image1 {
+    transform: translate(-10%, -150%);
+    opacity: 1;
+}
+
+.container:hover .image2 {
+    transform: translate(150%, -150%);
+    opacity: 1;
+}
+
+.container:hover .image3 {
+    transform: translate(50%, 150%);
+    opacity: 1;
+}
+
+.container:hover .image4 {
+    transform: translate(-50%, -150%);
+    opacity: 1;
+}
+
+.container:hover .image5 {
+    transform: translate(-150%, -150%);
+    opacity: 1;
+}
+
+.container:hover .image6 {
+    transform: translate(210%, 100%);
+    opacity: 1;
+}
+
+.container:hover .image7 {
+    transform: translate(-200%, 150%);
+    opacity: 1;
+}
+
+.wheel-container {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.tout {
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #333;
+    position: relative;
+    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+    overflow: hidden;
+}
+
+.slice {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform-origin: left center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slice:nth-child(1) {
+    background: #f67280;
+    transform: rotate(0deg);
+}
+
+.slice:nth-child(2) {
+    background: #f8b195;
+    transform: rotate(180deg);
+}
+
+.label1 {
+    position: absolute;
+    font-size: 22px;
+    left: 30px;
+    top: 130px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.label2 {
+    position: absolute;
+    font-size: 22px;
+    right: 30px;
+    top: 130px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.label:nth-child(1) {
+    transform: rotate(90deg) translateY(-110px);
+}
+
+.label:nth-child(2) {
+    transform: rotate(270deg) translateY(-110px);
+}
+
+.pointer {
+    width: 50px;
+}
+
+#spinBtn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1d3557;
+    display: none;
 }

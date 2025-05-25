@@ -8,9 +8,6 @@
 </head>
 
 <html>
-    <header>
-        <img src="images/Logo_IUT_Lannion.svg.png" alt="IUT de Logo_IUT_Lannion">
-    </header>
 
     <body>
         <section>
@@ -19,23 +16,71 @@
         </section>
 
         <article>
-            <div onclick="window.location.href = 'parcours.html'" style = "cursor: pointer">
+            <div onclick="window.location.href = 'parcours.html'" style = "cursor: pointer" class="container">
                 <p>mon parcours</p>
+                <img src="images/rotn.jpeg" alt="rotn1" class="image image1" />
+                <img src="images/rotn2.png" alt="rotn2" class="image image2" />
+                <img src="images/shocksousmarin.png" alt="bioshock" class="image image3" />
+                <img src="images/solray.png" alt="solray" class="image image4">
+                <img src="images/ssbu.png" alt="bioshocko" class="image image5">
+                <img src="images/okayslayer.png" alt="" class="image image6">
+                <img src="images/menteur.png" alt="menteur" class="image image7">
             </div>
 
-            <div>
+            <div class="container">
                 <p onclick="window.location.href = 'projets.html'" style = "cursor: pointer">mes projets</p>
             </div>
         </article>
 
         <article>
             <div class="div3">
-                <a href="images/CV_Barthelemy_GOUJON.pdf" download style = "cursor: pointer">Mon CV</a>
+                <a href="images/CV_Barthelemy_GOUJON.pdf" download style = "cursor: pointer" class="container" >Mon CV</a>
             </div>
         </article>
+
+        <div>
+            <h2>Mais par où commencer ?</h2>
+            <img src="" alt="">
+        </div>
+
+        <div class="tout">
+            <div class="wheel-container">
+            <img src="images/pointer.png" alt="pointer" class="pointer">
+            <div class="wheel" id="wheel">
+                <div class="slice"></div>
+                <div class="slice"></div>
+                <div class="label1">Projets</div>
+                <div class="label2">Parcours</div>
+            </div>
+            </div>
+            <button id="spinBtn">Tourner la roue</button>
+            <div id="result"></div>
+        </div>
+
+        <script>
+            const items = ["Projets", "Parcours"];
+            const wheel = document.getElementById("wheel");
+            const result = document.getElementById("result");
+            let currentRotation = 0;
+
+            document.getElementById("spinBtn").addEventListener("click", () => {
+                result.innerText = "";
+                const randomTurns = Math.floor(Math.random() * 3) + 5;
+                const randomAngle = Math.floor(Math.random() * 360);
+                const totalRotation = (randomTurns * 360) + randomAngle;
+
+                currentRotation += totalRotation;
+                wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+                setTimeout(() => {
+                const finalAngle = currentRotation % 360;
+                const selectedIndex = (finalAngle >= 0 && finalAngle < 180) ? 0 : 1;
+                result.innerText = `Résultat : ${items[selectedIndex]}`;
+
+                // Action possible ici
+                // if (items[selectedIndex] === "Projets") window.location.href = "/projets.html";
+                }, 4100);
+            });
+        </script>
     </body>
-
-    <footer>
-
-    </footer>
 </html>
